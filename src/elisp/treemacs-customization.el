@@ -357,7 +357,7 @@ Since removing files ignored by git is the most likely use-case treemacs offers
   :type 'list
   :group 'treemacs)
 
-(defcustom treemacs-file-event-delay 5000
+(defcustom treemacs-file-event-delay 2000
   "How long (in milliseconds) to collect file events before refreshing.
 When treemacs receives a file change notification it doesn't immediately refresh
 and instead waits `treemacs-file-event-delay' milliseconds to collect further
