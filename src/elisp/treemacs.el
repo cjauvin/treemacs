@@ -183,7 +183,7 @@ treemacs buffer for this frame."
   (goto-char 0))
 
 ;;;###autoload
-(defun treemacs-display-current-project-exclusively ()
+(defun treemacs-add-and-display-current-project-exclusively ()
   "Display the current project, and *only* the current project.
 Like `treemacs-add-and-display-current-project' this will add the current
 project to treemacs based on either projectile or the built-in project.el.
@@ -219,6 +219,10 @@ only project, all other projects *will be removed* from the current workspace."
            (unless (treemacs-is-node-expanded? btn)
              (treemacs--expand-root-node btn)))
          (treemacs-pulse-on-success))))))
+(define-obsolete-function-alias
+  'treemacs-display-current-project-exclusively
+  #'treemacs-add-and-display-current-project-exclusively
+  "v2.9")
 
 ;;;###autoload
 (defun treemacs-add-and-display-current-project ()
