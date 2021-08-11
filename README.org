@@ -190,7 +190,7 @@ You can also use ~treemacs-display-current-project-exclusively~ to switch to the
 that might be present).
 
 ** Frame Locality
-Treemacs buffers have a limited scope they are visible in: the frames they are created in. A treemacs buffer, once
+Treemacs buffers have a limited scope they are visible in: the frames they aaare created in. A treemacs buffer, once
 created, lives alongside and inside its frame, and is also destroyed with that frame. Calling ~treemacs~ while inside a
 new frame will create a new buffer for it, regardless how many other treemacs buffers already exist. While there can be
 multiple unique treemacs buffer they will all still show the same workspace and the same projects.
